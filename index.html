@@ -1,214 +1,159 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>AC Service @ ₹499 | Pune, PCMC, Wakad, Hinjewadi</title>
 
-<title>AC Repair & Installation in Pimpri Chinchwad Pune | Cool Care AC Service</title>
-
-
-<meta name="description" content="Cool Care AC Service provides AC repair, installation, gas filling and maintenance in Pimpri Chinchwad Pune 411017. Call now for same day service.">
-
-<meta name="keywords" content="AC repair Pimpri Chinchwad, AC installation Pune, AC service 411017, AC technician near me">
-
-<meta name="robots" content="index, follow">
-
-<meta name="author" content="Cool Care AC Installation & Repair">
-
-
-<!-- LOCAL BUSINESS + REVIEW SCHEMA -->
-
-<script type="application/ld+json">
-
-{
-
-  "@context": "https://schema.org",
-
-  "@type": "HVACBusiness",
-
-  "name": "Cool Care AC Installation & Repair",
-
-  "telephone": "+91-7378930860",
-
-  "priceRange": "₹₹",
-
-  "address": {
-
-    "@type": "PostalAddress",
-
-    "streetAddress": "Pimpri Chinchwad",
-
-    "addressLocality": "Pune",
-
-    "addressRegion": "MH",
-
-    "postalCode": "411017",
-
-    "addressCountry": "IN"
-
-  },
-
-  "geo": {
-
-    "@type": "GeoCoordinates",
-
-    "latitude": 18.6298,
-
-    "longitude": 73.7997
-
-  },
-
-  "openingHours": "Mo-Su 08:00-22:00",
-
-  "aggregateRating": {
-
-    "@type": "AggregateRating",
-
-    "ratingValue": "4.9",
-
-    "reviewCount": "87"
-
-  },
-
-  "areaServed": "Pimpri Chinchwad Pune"
-
-}
-
-</script>
-
+<meta name="description" content="AC Repair, Installation & Gas Filling @ ₹499. Emergency AC Service in Pune, PCMC, Wakad & Hinjewadi. Call Now.">
+<meta name="keywords" content="AC service Pune, AC repair PCMC, AC service Wakad, AC technician Hinjewadi, AC service 499">
+<meta name="theme-color" content="#2563eb">
 
 <style>
+body{margin:0;font-family:Poppins,Arial;background:#f1f5f9;color:#0f172a}
+header{background:#020617;color:#fff;padding:12px;text-align:center;font-size:14px}
+.emergency{background:#dc2626;color:#fff;padding:10px;text-align:center;font-weight:bold}
 
-body{margin:0;font-family:Arial;background:#f8fafc;color:#1f2933}
+.hero{
+background:linear-gradient(rgba(2,6,23,.7),rgba(2,6,23,.7));
+color:#fff;padding:90px 20px;text-align:center
+}
+.hero h1{font-size:38px;animation:fadeUp 1s ease}
+.hero span{color:#22c55e}
 
-header{background:#1e3a8a;color:#fff;padding:16px;text-align:center;font-size:20px}
-
-.hero{background:#0f172a;color:#fff;text-align:center;padding:70px 20px}
-
-.btn{padding:14px 26px;border-radius:30px;color:#fff;text-decoration:none;font-weight:bold}
-
+.btn{
+display:inline-block;margin:10px;padding:18px 34px;
+border-radius:40px;font-size:18px;
+color:#fff;text-decoration:none;font-weight:600
+}
 .call{background:#2563eb}
-
 .whats{background:#22c55e}
 
-section{padding:40px 20px;max-width:1000px;margin:auto}
+section{padding:60px 20px;max-width:1100px;margin:auto}
+h2{text-align:center;font-size:30px;margin-bottom:30px}
 
-h2{text-align:center}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px
+}
+.card{
+background:#fff;padding:25px;border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+text-align:center
+}
 
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+.review{background:#0f172a;color:#fff;border-radius:20px;padding:40px}
 
-.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 5px 10px rgba(0,0,0,.1)}
+.cities span{
+display:inline-block;background:#e0f2fe;color:#0369a1;
+padding:10px 18px;border-radius:30px;margin:6px
+}
 
-form{max-width:500px;margin:auto;display:flex;flex-direction:column;gap:10px}
+.cta{
+background:linear-gradient(135deg,#2563eb,#22c55e);
+color:#fff;text-align:center;padding:60px;border-radius:20px
+}
 
-input,textarea,button{padding:12px;border-radius:8px;border:1px solid #ccc}
+footer{background:#020617;color:#94a3b8;text-align:center;padding:20px}
 
-button{background:#1e3a8a;color:#fff;border:none}
+/* Animation */
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px)}
+to{opacity:1;transform:translateY(0)}
+}
+.reveal{opacity:0;transform:translateY(40px);transition:.8s}
+.reveal.active{opacity:1;transform:none}
 
-iframe{width:100%;height:300px;border:0;border-radius:12px}
+/* Sticky Buttons */
+.sticky-btns{
+position:fixed;bottom:20px;right:20px;
+display:flex;flex-direction:column;gap:12px;z-index:9999
+}
+.sticky{
+width:58px;height:58px;border-radius:50%;
+display:flex;align-items:center;justify-content:center;
+color:#fff;font-size:26px;text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+animation:pulse 2s infinite
+}
+.sticky.call{background:#2563eb}
+.sticky.wa{background:#22c55e}
 
-footer{background:#020617;color:#aaa;text-align:center;padding:15px}
-
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.08)}
+100%{transform:scale(1)}
+}
 </style>
-
 </head>
-
 
 <body>
 
-
-<header>Cool Care AC Installation & Repair – Pimpri Chinchwad Pune</header>
-
+<header>Cool Care AC Installation & Repair – Pune & PCMC</header>
+<div class="emergency">🚨 24x7 Emergency AC Service Available – Call Now!</div>
 
 <div class="hero">
-
-<h1>AC Repair & Installation Services</h1>
-
-<p>Same Day Service • Certified Technicians • Affordable Price</p>
-
+<h1>AC Service Starting @ <span>₹499</span></h1>
+<p>Fast • Certified • Same Day Service</p>
 <a href="tel:7378930860" class="btn call">📞 Call Now</a>
-
-<a href="https://wa.me/917378930860" class="btn whats">💬 WhatsApp</a>
-
+<a href="javascript:openWA()" class="btn whats">💬 WhatsApp</a>
 </div>
 
-
-<section>
-
-<h2>Our Services</h2>
-
-<div class="services">
-
+<section class="reveal">
+<h2>Our AC Services</h2>
+<div class="cards">
 <div class="card">AC Installation</div>
-
 <div class="card">AC Repair</div>
-
-<div class="card">AC Gas Filling</div>
-
-<div class="card">AC Maintenance (AMC)</div>
-
+<div class="card">Gas Filling</div>
+<div class="card">AMC Maintenance</div>
 </div>
-
 </section>
 
-
-<section>
-
-<h2>Contact Us (WhatsApp)</h2>
-
-<form onsubmit="sendWA();return false;">
-
-<input id="n" placeholder="Name" required>
-
-<input id="p" placeholder="Mobile" required>
-
-<textarea id="m" placeholder="AC Problem"></textarea>
-
-<button>Send on WhatsApp</button>
-
-</form>
-
+<section class="review reveal">
+<h2>⭐⭐⭐⭐⭐ Customer Reviews</h2>
+<p>Very professional service. Highly recommended!</p>
 </section>
 
-
-<section>
-
-<h2>Service Area – Pimpri Chinchwad (411017)</h2>
-
-<iframe src="https://www.google.com/maps?q=411017%20Pimpri%20Chinchwad%20Pune&output=embed"></iframe>
-
+<section class="reveal">
+<h2>Service Areas</h2>
+<div class="cities">
+<span>Pune</span><span>PCMC</span><span>Wakad</span><span>Hinjewadi</span>
+</div>
 </section>
 
+<section class="cta reveal">
+<h2>Book AC Service Today</h2>
+<p>Affordable • Trusted • Fast Response</p>
+<a href="services.html" class="btn call">View Services</a>
+</section>
 
-<footer>© 2026 Cool Care AC Service | Pimpri Chinchwad Pune</footer>
+<footer>© 2026 Cool Care AC Service | Pune & PCMC</footer>
 
+<!-- Sticky Buttons -->
+<div class="sticky-btns">
+<a href="tel:7378930860" class="sticky call">📞</a>
+<a href="javascript:openWA()" class="sticky wa">💬</a>
+</div>
 
 <script>
-
-function sendWA(){
-
-var n=document.getElementById('n').value;
-
-var p=document.getElementById('p').value;
-
-var m=document.getElementById('m').value;
-
-window.open("https://wa.me/917378930860?text="+
-
-encodeURIComponent("Name:"+n+"\nPhone:"+p+"\nProblem:"+m)," _blank");
-
+function openWA(){
+let msg = `Hello, I need AC Service.
+Page: ${document.title}
+Time: ${new Date().toLocaleString()}`;
+window.open("https://wa.me/917378930860?text="+encodeURIComponent(msg),"_blank");
 }
 
+const reveals=document.querySelectorAll(".reveal");
+window.addEventListener("scroll",()=>{
+reveals.forEach(el=>{
+if(el.getBoundingClientRect().top < window.innerHeight-80){
+el.classList.add("active");
+}
+});
+});
 </script>
 
-
 </body>
-
 </html>
-
-
