@@ -6,8 +6,8 @@
 
 <title>Cool Care AC Installation & Repair Pimpri Pune | AC Service Near Me</title>
 
-<meta name="description" content="Cool Care AC Installation & Repair Pimpri Pune offers AC repair, installation, gas filling & servicing. Emergency AC service in Pimpri, PCMC, Wakad, Hinjewadi & nearby areas.">
-<meta name="keywords" content="AC service Pimpri, AC repair Chinchwad, AC technician PCMC, AC service Wakad, AC service Hinjewadi, split AC service Pune">
+<meta name="description" content="Cool Care AC Installation & Repair Pimpri Pune provides professional Split AC installation, repair, servicing and gas charging. Serving Pimpri, PCMC & nearby areas.">
+<meta name="keywords" content="AC service Pimpri, Split AC repair Pune, AC technician PCMC, AC service Wakad, AC service Hinjewadi">
 <meta name="theme-color" content="#2563eb">
 
 <style>
@@ -16,7 +16,9 @@ header{background:#020617;color:#fff;padding:14px;text-align:center;font-size:15
 .emergency{background:#dc2626;color:#fff;padding:10px;text-align:center;font-weight:bold}
 
 .hero{
-background:linear-gradient(rgba(2,6,23,.75),rgba(2,6,23,.75));
+background:
+linear-gradient(rgba(2,6,23,.75),rgba(2,6,23,.75)),
+url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c') center/cover;
 color:#fff;padding:90px 20px;text-align:center
 }
 .hero h1{font-size:38px}
@@ -43,6 +45,7 @@ background:#fff;padding:25px;border-radius:18px;
 box-shadow:0 10px 25px rgba(0,0,0,.12);
 text-align:center
 }
+.card img{width:100%;border-radius:15px}
 
 .review{background:#0f172a;color:#fff;border-radius:20px;padding:40px}
 
@@ -57,6 +60,13 @@ color:#fff;text-align:center;padding:60px;border-radius:20px
 }
 
 footer{background:#020617;color:#94a3b8;text-align:center;padding:20px}
+
+/* Map */
+.map-box{
+margin-top:40px;border-radius:20px;
+overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.15)
+}
+.map-box iframe{width:100%;height:350px;border:0}
 
 /* Sticky Buttons */
 .sticky-btns{
@@ -80,14 +90,14 @@ box-shadow:0 10px 25px rgba(0,0,0,.3)
 <div class="emergency">🚨 24x7 Emergency AC Service Available – Call Now!</div>
 
 <div class="hero">
-<h1>Professional AC Service in <span>Pimpri Pune</span></h1>
-<p>Split AC Installation • Repair • Servicing • Gas Charging</p>
+<h1>Professional Split AC Service in <span>Pimpri Pune</span></h1>
+<p>Installation • Repair • Servicing • Gas Charging</p>
 <a href="tel:7378930860" class="btn call">📞 Call Now</a>
 <a href="javascript:openWA()" class="btn whats">💬 WhatsApp</a>
 </div>
 
 <section>
-<h2>Our AC Services</h2>
+<h2>Our Split AC Services</h2>
 <div class="cards">
 <div class="card">Split AC Installation</div>
 <div class="card">Split AC Repair</div>
@@ -98,7 +108,19 @@ box-shadow:0 10px 25px rgba(0,0,0,.3)
 
 <section class="review">
 <h2>⭐⭐⭐⭐⭐ Trusted AC Technician</h2>
-<p>Cool Care AC Installation & Repair Pimpri Pune is known for fast response, professional work and reliable AC solutions.</p>
+<p>
+Cool Care AC Installation & Repair Pimpri Pune is trusted for professional
+work, fast response and reliable AC solutions for homes and offices.
+</p>
+</section>
+
+<section>
+<h2>Our Professional Work</h2>
+<div class="cards">
+<img class="card" src="https://images.unsplash.com/photo-1581091870627-3d7c1c2f8a5c" alt="AC Technician">
+<img class="card" src="https://images.unsplash.com/photo-1597001300902-8b4a1ddf3d62" alt="Split AC Installation">
+<img class="card" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e" alt="AC Service Tools">
+</div>
 </section>
 
 <section>
@@ -112,10 +134,26 @@ box-shadow:0 10px 25px rgba(0,0,0,.3)
 </div>
 </section>
 
-<section class="cta">
-<h2>Book AC Service Today</h2>
-<p>Fast • Professional • Trusted AC Technician</p>
-<a href="services.html" class="btn call">View Services</a>
+<section>
+<h2>Our Location – Pimpri Pune</h2>
+<div class="map-box">
+<iframe src="https://www.google.com/maps?q=Pimpri%20Pune&output=embed" loading="lazy"></iframe>
+</div>
+</section>
+
+<section id="book">
+<h2>Book AC Service Request</h2>
+
+<form onsubmit="sendRequest();return false;"
+style="max-width:500px;margin:auto;background:#fff;padding:30px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.15)">
+
+<input id="name" placeholder="Your Name" required style="width:100%;padding:14px;margin-bottom:12px;border-radius:10px;border:1px solid #ccc">
+<input id="phone" placeholder="Mobile Number" required style="width:100%;padding:14px;margin-bottom:12px;border-radius:10px;border:1px solid #ccc">
+<input id="area" placeholder="Your Area" required style="width:100%;padding:14px;margin-bottom:12px;border-radius:10px;border:1px solid #ccc">
+<textarea id="problem" placeholder="AC Problem" style="width:100%;padding:14px;margin-bottom:15px;border-radius:10px;border:1px solid #ccc"></textarea>
+
+<button class="btn call" style="width:100%">Submit Request</button>
+</form>
 </section>
 
 <footer>© 2026 Cool Care AC Installation & Repair Pimpri Pune</footer>
@@ -129,8 +167,19 @@ box-shadow:0 10px 25px rgba(0,0,0,.3)
 function openWA(){
 let msg=`Hello, I need AC Service.
 Business: Cool Care AC Installation & Repair Pimpri Pune
-Area: ${document.title}
 Time: ${new Date().toLocaleString()}`;
+window.open("https://wa.me/917378930860?text="+encodeURIComponent(msg),"_blank");
+}
+
+function sendRequest(){
+let msg=`New AC Service Request
+
+Name: ${name.value}
+Mobile: ${phone.value}
+Area: ${area.value}
+Problem: ${problem.value}
+
+Business: Cool Care AC Installation & Repair Pimpri Pune`;
 window.open("https://wa.me/917378930860?text="+encodeURIComponent(msg),"_blank");
 }
 </script>
