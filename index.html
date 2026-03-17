@@ -4,34 +4,150 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Smart Cool AC Repair & Installation Pune | AC Service Pimpri Wakad Ravet</title>
+<title>Smart Cool AC Repair & Installation Pune</title>
 
-<meta name="description" content="Smart Cool AC Repair & Installation Pune offers fast AC service in Pimpri, Wakad, Ravet, Hinjawadi. Call now for installation, repair and servicing.">
+<meta name="description" content="Fast AC repair, installation & servicing in Pimpri, Wakad, Ravet, Hinjawadi.">
 
 <style>
 body{margin:0;font-family:Poppins,Arial;background:#f1f5f9}
 
-.top-brand{background:#2563eb;color:#fff;text-align:center;padding:12px;font-weight:bold;font-size:18px}
-header{background:#020617;color:#fff;padding:14px;text-align:center}
-.emergency{background:#dc2626;color:#fff;padding:10px;text-align:center;font-weight:bold}
+/* LOADING SCREEN */
+#loader{
+position:fixed;
+width:100%;
+height:100%;
+background:#020617;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+z-index:9999
+}
 
-.hero{background:#020617;color:#fff;padding:80px 20px;text-align:center}
-.hero h1{font-size:36px}
-.btn{padding:15px 30px;border-radius:30px;text-decoration:none;color:#fff;margin:10px;display:inline-block}
+/* BRAND */
+.top-brand{
+background:#2563eb;
+color:#fff;
+text-align:center;
+padding:12px;
+font-weight:bold;
+font-size:18px
+}
+
+/* HERO */
+.hero{
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80') center/cover;
+color:#fff;
+padding:110px 20px;
+text-align:center;
+animation:fadeIn 1.5s ease
+}
+.hero h1{font-size:42px}
+.hero p{font-size:18px}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+/* BUTTON */
+.btn{
+padding:16px 34px;
+border-radius:50px;
+font-size:18px;
+color:#fff;
+text-decoration:none;
+margin:10px;
+display:inline-block;
+transition:.3s
+}
 .call{background:#2563eb}
 .whats{background:#22c55e}
+.btn:hover{transform:scale(1.05)}
 
-section{padding:60px 20px;max-width:1100px;margin:auto}
-h2{text-align:center;margin-bottom:30px}
+/* SECTION */
+section{
+padding:70px 20px;
+max-width:1100px;
+margin:auto;
+animation:fadeIn 1.2s ease
+}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+/* HEADING */
+h2{
+text-align:center;
+font-size:32px;
+margin-bottom:25px;
+position:relative
+}
+h2::after{
+content:'';
+width:60px;
+height:4px;
+background:#2563eb;
+display:block;
+margin:10px auto;
+border-radius:2px
+}
 
-.work-img{width:100%;border-radius:16px}
+/* CARDS */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px
+}
+.card{
+background:#fff;
+padding:25px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+text-align:center;
+transition:.3s
+}
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(0,0,0,.15)
+}
 
-.map-box iframe{width:100%;height:500px;border:0} /* map bada */
+/* IMAGES */
+.work-img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:16px;
+transition:.3s
+}
+.work-img:hover{transform:scale(1.05)}
 
-.sticky-btns{position:fixed;bottom:20px;right:20px;display:flex;flex-direction:column;gap:10px}
-.sticky{width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-size:24px}
+/* MAP */
+.map-box iframe{
+width:100%;
+height:500px;
+border-radius:20px
+}
+
+/* STICKY */
+.sticky-btns{
+position:fixed;
+bottom:20px;
+right:20px;
+display:flex;
+flex-direction:column;
+gap:10px
+}
+.sticky{
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-size:26px;
+text-decoration:none
+}
 .call-btn{background:#2563eb}
 .wa-btn{background:#22c55e}
 </style>
@@ -39,54 +155,55 @@ h2{text-align:center;margin-bottom:30px}
 
 <body>
 
+<div id="loader">Loading Smart Cool AC Services...</div>
+
 <div class="top-brand">🔥 Smart Cool AC Repair & Installation Pune</div>
 
-<header>Fast AC Service in Pimpri • Wakad • Ravet</header>
-<div class="emergency">🚨 24x7 Emergency Service – Call Now 8795860433</div>
-
 <div class="hero">
-<h1>AC Repair & Installation Experts</h1>
+<h1>Best AC Repair & Installation Service</h1>
 <p>✅ Same Day Service | ⚡ Fast Response | 🧑‍🔧 Expert Technician</p>
 <a href="tel:8795860433" class="btn call">📞 Call Now</a>
 <a href="javascript:openWA()" class="btn whats">💬 WhatsApp</a>
 </div>
 
 <section>
-<h2>Our AC Services</h2>
+<h2>Our Services</h2>
 <div class="cards">
-<div>Installation</div>
-<div>Repair & Maintenance</div>
-<div>Gas Refilling</div>
+<div class="card">AC Installation</div>
+<div class="card">AC Repair</div>
+<div class="card">Gas Refilling</div>
 </div>
 </section>
 
-<!-- IMAGE SECTION -->
 <section>
 <h2>Our Work</h2>
 <div class="cards">
 
 <img class="work-img"
-src="YOUR_IMAGE_1_URL_HERE"
-alt="AC Installation Service Pune">
+src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80">
 
 <img class="work-img"
-src="YOUR_IMAGE_2_URL_HERE"
-alt="AC Repair Technician Pimpri Pune">
+src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=80">
+
+<img class="work-img"
+src="https://images.unsplash.com/photo-1600566752227-8f3b0d7c3c07?auto=format&fit=crop&w=1200&q=80">
 
 </div>
 </section>
 
 <section>
 <h2>Service Areas</h2>
-<p style="text-align:center">Pimpri, Wakad, Ravet, Hinjawadi, Nigdi, Akurdi, Pimple Saudagar</p>
+<p style="text-align:center">
+Pimpri, Wakad, Ravet, Hinjawadi, Nigdi, Akurdi, Pimple Saudagar
+</p>
 </section>
 
 <section>
 <h2>Customer Reviews</h2>
 <div class="cards">
-<div>⭐⭐⭐⭐⭐ Fast service – Wakad</div>
-<div>⭐⭐⭐⭐⭐ Best technician – Hinjawadi</div>
-<div>⭐⭐⭐⭐⭐ Affordable & quick – Ravet</div>
+<div class="card">⭐⭐⭐⭐⭐ Fast service – Wakad</div>
+<div class="card">⭐⭐⭐⭐⭐ Best technician – Hinjawadi</div>
+<div class="card">⭐⭐⭐⭐⭐ Affordable – Ravet</div>
 </div>
 </section>
 
@@ -97,7 +214,7 @@ alt="AC Repair Technician Pimpri Pune">
 </div>
 </section>
 
-<footer style="text-align:center;padding:20px">© Smart Cool AC Repair & Installation Pune</footer>
+<footer style="text-align:center;padding:20px">© Smart Cool AC Pune</footer>
 
 <div class="sticky-btns">
 <a href="tel:8795860433" class="sticky call-btn">📞</a>
@@ -105,6 +222,10 @@ alt="AC Repair Technician Pimpri Pune">
 </div>
 
 <script>
+window.onload=function(){
+document.getElementById("loader").style.display="none";
+}
+
 function openWA(){
 let msg=`Urgent AC Service Required – Please send technician today
 Business: Smart Cool AC Repair Pune`;
